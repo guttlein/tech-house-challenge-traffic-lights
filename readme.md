@@ -15,3 +15,14 @@ Este proyecto implementa un simulador de tráfico que gestiona el movimiento de 
    - Los vehículos (C) se mueven hacia adelante en la carretera.
    - Pueden avanzar si el semáforo frente a ellos está en verde o si no hay semáforo.
    - Un vehículo no puede pasar a una posición ocupada por otro vehículo o un semáforo en rojo.
+
+##Notas
+
+El proyecto no funciona de la forma esperada. Los test fueron creados con el comportamiento adecuado y el resultado esperado.
+Luego se adjunto el codigo que resuelve el problema.
+Por ahora el unico problema encontrado es el siguiente caso:
+
+- Al tener 2 o mas vehículos en posiciones adjuntas, si el primer vehículo ocupa el lugar de un semaforo en verde, en la siguiente iteracion, todos los vehículos avanzan mientras el semaforo siga verde.
+  El problema aca, es que el segundo vehículo deberia frenarse puesto que el primero ocupa el lugar de un semaforo y eso impide al segundo vehículo conocer su estado.
+
+  Para poder arreglar este problema hay que cambiar la logica para verificar si el vehículo en su posicion, posee un vehículo en la posicion siguiente y en ese caso, el vehículo no deberia avanzar a la siguiente posicion.
