@@ -16,7 +16,7 @@ Este proyecto implementa un simulador de tráfico que gestiona el movimiento de 
    - Pueden avanzar si el semáforo frente a ellos está en verde o si no hay semáforo.
    - Un vehículo no puede pasar a una posición ocupada por otro vehículo o un semáforo en rojo.
 
-##Notas
+## Notas
 
 El proyecto no funciona de la forma esperada. Los test fueron creados con el comportamiento adecuado y el resultado esperado.
 Luego se adjunto el codigo que resuelve el problema.
